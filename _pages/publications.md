@@ -11,6 +11,12 @@ author_profile: true
 
 {% include base_path %}
 
+<style>
+  .publications-list li { margin-bottom: 1em; }
+</style>
+
+<ol class="publications-list">
 {% for post in site.publications reversed %}
-  {% include archive-single.html %}
+  <li>{{ post.citation }}. <strong>"<i>{% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}</i>"</strong>. {{ post.venue_prefix | default: "Published in" }} {{ post.venue }}, {{ post.date | date: "%Y" }}.</li>
 {% endfor %}
+</ol>
