@@ -5,5 +5,5 @@ date: 2027-03-20
 venue: '33rd IEEE International Symposium on High-Performance Computer Architecture (HPCA)'
 venue_prefix: 'To appear in'
 #paperurl: 'pdf'
-citation: '<strong>Ajay Sharma Mandadi</strong>, Pulkit Gupta and Thomas M. Conte'
+citation: '<strong>Ajay Sharma Mandadi</strong>, Pulkit Gupta, Thomas M. Conte'
 ---

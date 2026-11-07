@@ -17,6 +17,6 @@ author_profile: true
 
 <ol class="publications-list">
 {% for post in site.publications reversed %}
-  <li>{{ post.citation }}. <strong>"<i>{% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}</i>"</strong>. {{ post.venue_prefix | default: "Published in" }} {{ post.venue }}, {{ post.date | date: "%Y" }}.</li>
+  <li>{{ post.citation }}. <strong>"<i>{% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.title }}</a>{% else %}{{ post.title }}{% endif %}</i>"</strong>. {% if post.venue_prefix %}{{ post.venue_prefix }} {% endif %}{{ post.venue }}, {{ post.date | date: "%Y" }}.</li>
 {% endfor %}
 </ol>
